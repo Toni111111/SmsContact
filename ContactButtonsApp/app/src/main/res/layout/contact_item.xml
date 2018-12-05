@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/darker_gray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/ll_contact_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:id="@+id/name_item_tv"
+        android:text="Имя"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:id="@+id/phone_number_item_tv"
+        android:text="89992551067"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
