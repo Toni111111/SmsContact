@@ -44,9 +44,10 @@ public class MainModelAdapters extends RecyclerView.Adapter<MainModelAdapters.Vi
             holder.llcontact.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + contacts.get(position).getPhone()));
-                    intent.putExtra("sms_body", contacts.get(position).getText());
-                    activity.startActivity(intent);
+                    //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + contacts.get(position).getPhone()));
+                   // intent.putExtra("sms_body", contacts.get(position).getText());
+                   // activity.startActivity(intent);
+                    activity.sendSmsByManager(contacts.get(position).getPhone(),contacts.get(position).getText());
                 }
             });
         }else{
